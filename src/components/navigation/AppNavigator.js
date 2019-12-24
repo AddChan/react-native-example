@@ -3,8 +3,9 @@ import { createStackNavigator } from "react-navigation-stack";
 
 import Root from "../screen/Root";
 import ScrollTo from "../screen/ScrollTo";
+import FlatList from "../screen/FlatList";
 
-const RootNavigator = createStackNavigator(
+const AppNavigator = createStackNavigator(
   {
     Home: {
       screen: Root,
@@ -17,6 +18,12 @@ const RootNavigator = createStackNavigator(
       navigationOptions: {
         title: "ScrollTo"
       }
+    },
+    FlatList: {
+      screen: FlatList,
+      navigationOptions: {
+        title: "FlatList"
+      }
     }
   },
   {
@@ -24,4 +31,4 @@ const RootNavigator = createStackNavigator(
   }
 );
 
-export default createAppContainer(RootNavigator);
+export default createAppContainer(AppNavigator);
