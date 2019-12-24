@@ -1,6 +1,6 @@
 import React from "react";
-import Root from "./src/components/screen/Root";
+import RootNavigator from "./src/components/navigation/RootNavigator";
 
 export default function App() {
-  return <Root />;
+  return <RootNavigator />;
 }

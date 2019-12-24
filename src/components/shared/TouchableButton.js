@@ -2,12 +2,11 @@ import React from "react";
 import { StyleSheet, Text, TouchableOpacity } from "react-native";
 
 const TouchableButton = props => {
-  // 네비게이션으로 id값에 this.props.title값을 주어서 넘겨주기
-  handlePress = () => {
-    console.log(props.title);
-  };
   return (
-    <TouchableOpacity style={styles.container} onPress={handlePress}>
+    <TouchableOpacity
+      style={styles.container}
+      onPress={() => props.handlePress(props.title)}
+    >
       <Text style={styles.title}>{props.title}</Text>
     </TouchableOpacity>
   );
