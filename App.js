@@ -1,19 +1,6 @@
 import React from "react";
-import { StyleSheet, Text, View } from "react-native";
+import Root from "./src/components/screen/Root";
 
 export default function App() {
-  return (
-    <View style={styles.container}>
-      <Text>react-native-example by.AddChan</Text>
-    </View>
-  );
+  return <Root />;
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: "#fff",
-    alignItems: "center",
-    justifyContent: "center"
-  }
-});
