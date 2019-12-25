@@ -2,10 +2,15 @@ import React from "react";
 import { StyleSheet, View } from "react-native";
 import TouchableButton from "../shared/TouchableButton";
 
-const Root = () => {
+const Root = props => {
+  handlePress = title => {
+    props.navigation.navigate(title);
+  };
+
   return (
     <View style={styles.container}>
-      <TouchableButton title={"ScrollTo"} />
+      <TouchableButton title={"ScrollTo"} handlePress={handlePress} />
+      <TouchableButton title={"FlatList"} handlePress={handlePress} />
     </View>
   );
 };
