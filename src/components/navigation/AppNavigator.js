@@ -3,7 +3,7 @@ import { createStackNavigator } from "react-navigation-stack";
 
 import Root from "../screen/Root";
 import ScrollTo from "../screen/ScrollTo";
-import FlatList from "../screen/FlatList";
+import Sticky from "../screen/Sticky";
 
 const AppNavigator = createStackNavigator(
   {
@@ -19,10 +19,10 @@ const AppNavigator = createStackNavigator(
         title: "ScrollTo"
       }
     },
-    FlatList: {
-      screen: FlatList,
+    Sticky: {
+      screen: Sticky,
       navigationOptions: {
-        title: "FlatList"
+        title: "Sticky"
       }
     }
   },
