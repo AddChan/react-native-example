@@ -1,60 +1,64 @@
 import React, { Component } from "react";
-import { View, Text, StyleSheet, ScrollView, Button } from "react-native";
+import {
+  View,
+  Text,
+  StyleSheet,
+  ScrollView,
+  TouchableOpacity
+} from "react-native";
+
+// Scroll To 에 대한 설명은 https://csc0705.tistory.com/65 에 있습니다.
 
 class ScrollTo extends Component {
+  handleButtonPress = () => {
+    this.scrollView.scrollTo({
+      y: 0
+    });
+  };
+
   render() {
-    var Data = [
-      "item 1",
-      "item 2",
-      "item 3",
-      "item 4",
-      "item 5",
-      "item 6",
-      "item 7",
-      "item 8",
-      "item 9",
-      "item 10",
-      "item 11",
-      "item 12",
-      "item 13",
-      "item 14",
-      "item 15"
-    ];
     return (
-      <ScrollView>
-        <View style={styles.container}>
-          {Data.map((el, index) => {
-            return (
-              <View key={index} style={styles.itemContainer}>
-                <Text style={styles.itemText}>{el}</Text>
-              </View>
-            );
-          })}
+      <ScrollView ref={ref => (this.scrollView = ref)}>
+        <View style={styles.itemContainer}>
+          <Text style={styles.Text}>아래로 스크롤 해주세요</Text>
         </View>
-        <Button title={"맨 위로 이동"} onPress={this.handleButtonPress} />
+        <View style={styles.itemContainer2} />
+
+        <TouchableOpacity
+          onPress={this.handleButtonPress}
+          style={styles.buttonContainer}
+        >
+          <Text style={styles.Text}>스크롤 맨 위로 이동</Text>
+        </TouchableOpacity>
       </ScrollView>
     );
   }
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: "center",
-    alignItems: "center"
-  },
   itemContainer: {
     width: "100%",
+    height: 600,
+    borderWidth: 1,
+    alignItems: "center",
+    backgroundColor: "yellowgreen"
+  },
+  itemContainer2: {
+    width: "100%",
+    height: 600,
+    borderWidth: 1,
+    backgroundColor: "green"
+  },
+  buttonContainer: {
     height: 80,
     borderWidth: 1,
+    backgroundColor: "skyblue",
     alignItems: "center",
     justifyContent: "center"
   },
-  itemText: {
-    fontSize: 20
-  },
-  buttonContainer: {
-    height: 80
+  Text: {
+    fontSize: 20,
+    fontWeight: "bold"
   }
 });
 
