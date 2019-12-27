@@ -1,11 +1,12 @@
 import React, { Component } from "react";
 import { View, Text, StyleSheet, ScrollView } from "react-native";
 
+// Sticky 에 대한 설명은 https://csc0705.tistory.com/66 에 있습니다.
 class Sticky extends Component {
   render() {
     let Data = [
       "item 1",
-      "item 2",
+      "Sticky",
       "item 3",
       "item 4",
       "item 5",
@@ -21,11 +22,19 @@ class Sticky extends Component {
       "item 15"
     ];
     return (
-      <ScrollView style={styles.container} stickyHeaderIndices={[2]}>
+      <ScrollView stickyHeaderIndices={[1]}>
         {Data.map((el, index) => {
           return (
-            <View style={{ height: 200 }}>
-              <Text key={index}>{el}</Text>
+            <View style={styles.itemContainer} key={index}>
+              <Text
+                style={{
+                  fontSize: 20,
+                  fontWeight: "bold",
+                  textAlign: "center"
+                }}
+              >
+                {el}
+              </Text>
             </View>
           );
         })}
@@ -35,8 +44,11 @@ class Sticky extends Component {
 }
 
 const styles = StyleSheet.create({
-  container: {
-    flex: 1
+  itemContainer: {
+    width: "100%",
+    height: 120,
+    borderWidth: 2,
+    backgroundColor: "white"
   }
 });
 

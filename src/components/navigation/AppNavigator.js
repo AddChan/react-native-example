@@ -1,7 +1,7 @@
 import { createAppContainer } from "react-navigation";
 import { createStackNavigator } from "react-navigation-stack";
 
-import Root from "../screen/Root";
+import Root from "./Root";
 import ScrollTo from "../screen/ScrollTo";
 import Sticky from "../screen/Sticky";
 
