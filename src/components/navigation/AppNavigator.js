@@ -4,6 +4,7 @@ import { createStackNavigator } from "react-navigation-stack";
 import Root from "./Root";
 import ScrollTo from "../screen/ScrollTo";
 import Sticky from "../screen/Sticky";
+import OnLayout from "../screen/OnLayout";
 
 const AppNavigator = createStackNavigator(
   {
@@ -23,6 +24,12 @@ const AppNavigator = createStackNavigator(
       screen: Sticky,
       navigationOptions: {
         title: "Sticky"
+      }
+    },
+    OnLayout: {
+      screen: OnLayout,
+      navigationOptions: {
+        title: "OnLayout"
       }
     }
   },
