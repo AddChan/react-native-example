@@ -5,6 +5,7 @@ import Root from "./Root";
 import ScrollTo from "../screen/ScrollTo";
 import Sticky from "../screen/Sticky";
 import OnLayout from "../screen/OnLayout";
+import ModalExample from "../screen/ModalExample";
 
 const AppNavigator = createStackNavigator(
   {
@@ -30,6 +31,12 @@ const AppNavigator = createStackNavigator(
       screen: OnLayout,
       navigationOptions: {
         title: "OnLayout"
+      }
+    },
+    ModalExample: {
+      screen: ModalExample,
+      navigationOptions: {
+        title: "ModalExample"
       }
     }
   },
