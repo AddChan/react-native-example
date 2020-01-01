@@ -7,6 +7,7 @@ import Sticky from "../screen/Sticky";
 import OnLayout from "../screen/OnLayout";
 import ModalExample from "../screen/ModalExample";
 import Slider from "../screen/Slider";
+import Switch from "../screen/Switch";
 
 const AppNavigator = createStackNavigator(
   {
@@ -44,6 +45,12 @@ const AppNavigator = createStackNavigator(
       screen: Slider,
       navigationOptions: {
         title: "Slider"
+      }
+    },
+    Switch: {
+      screen: Switch,
+      navigationOptions: {
+        title: "Switch"
       }
     }
   },
