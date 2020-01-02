@@ -15,6 +15,7 @@ const Root = props => {
       <TouchableButton title={"ModalExample"} handlePress={handlePress} />
       <TouchableButton title={"Slider"} handlePress={handlePress} />
       <TouchableButton title={"Switch"} handlePress={handlePress} />
+      <TouchableButton title={"FlatList"} handlePress={handlePress} />
     </View>
   );
 };

@@ -8,6 +8,7 @@ import OnLayout from "../screen/OnLayout";
 import ModalExample from "../screen/ModalExample";
 import Slider from "../screen/Slider";
 import Switch from "../screen/Switch";
+import FlatList from "../screen/FlatList";
 
 const AppNavigator = createStackNavigator(
   {
@@ -51,6 +52,12 @@ const AppNavigator = createStackNavigator(
       screen: Switch,
       navigationOptions: {
         title: "Switch"
+      }
+    },
+    FlatList: {
+      screen: FlatList,
+      navigationOptions: {
+        title: "FlatList"
       }
     }
   },
