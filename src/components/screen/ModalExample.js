@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Modal, Text, View, TouchableOpacity, StyleSheet } from "react-native";
 
+// ModalExample 에 대한 설명은 https://csc0705.tistory.com/68 에 있습니다.
+
 class ModalExample extends Component {
   state = {
     modalVisible: false
