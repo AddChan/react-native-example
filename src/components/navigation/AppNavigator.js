@@ -5,7 +5,7 @@ import Root from "./Root";
 import ScrollTo from "../screen/ScrollTo";
 import Sticky from "../screen/Sticky";
 import OnLayout from "../screen/OnLayout";
-import ModalExample from "../screen/ModalExample";
+import Modal from "../screen/Modal";
 import Slider from "../screen/Slider";
 import Switch from "../screen/Switch";
 import FlatList from "../screen/FlatList";
@@ -36,10 +36,10 @@ const AppNavigator = createStackNavigator(
         title: "OnLayout"
       }
     },
-    ModalExample: {
-      screen: ModalExample,
+    Modal: {
+      screen: Modal,
       navigationOptions: {
-        title: "ModalExample"
+        title: "Modal"
       }
     },
     Slider: {

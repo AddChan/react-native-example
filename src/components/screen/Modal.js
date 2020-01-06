@@ -8,17 +8,13 @@ class ModalExample extends Component {
     modalVisible: false
   };
 
-  setModalVisible(visible) {
-    this.setState({ modalVisible: visible });
-  }
-
   render() {
     return (
       <View style={styles.container}>
         <TouchableOpacity
-          onPress={() => {
-            this.setModalVisible(true);
-          }}
+          onPress={() =>
+            this.setState({ modalVisible: !this.state.modalVisible })
+          }
         >
           <Text style={styles.textButton}>모달 열기</Text>
         </TouchableOpacity>
@@ -33,9 +29,9 @@ class ModalExample extends Component {
               <Text style={styles.text}>Hello Modal!</Text>
 
               <TouchableOpacity
-                onPress={() => {
-                  this.setModalVisible(!this.state.modalVisible);
-                }}
+                onPress={() =>
+                  this.setState({ modalVisible: !this.state.modalVisible })
+                }
               >
                 <Text style={styles.textButton}>모달 닫기</Text>
               </TouchableOpacity>
@@ -54,6 +50,7 @@ const styles = StyleSheet.create({
   Modalcontainer: {
     flex: 1,
     alignItems: "center",
+    justifyContent: "center",
     backgroundColor: "yellowgreen"
   },
 
