@@ -9,6 +9,7 @@ import Modal from "../screen/Modal";
 import Slider from "../screen/Slider";
 import Switch from "../screen/Switch";
 import FlatList from "../screen/FlatList";
+import TouchableOpacity from "../screen/TouchableOpacity";
 
 const AppNavigator = createStackNavigator(
   {
@@ -58,6 +59,12 @@ const AppNavigator = createStackNavigator(
       screen: FlatList,
       navigationOptions: {
         title: "FlatList"
+      }
+    },
+    TouchableOpacity: {
+      screen: TouchableOpacity,
+      navigationOptions: {
+        title: "TouchableOpacity"
       }
     }
   },
