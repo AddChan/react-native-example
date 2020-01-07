@@ -10,6 +10,7 @@ import Slider from "../screen/Slider";
 import Switch from "../screen/Switch";
 import FlatList from "../screen/FlatList";
 import TouchableOpacity from "../screen/TouchableOpacity";
+import ActivityIndicator from "../screen/ActivityIndicator";
 
 const AppNavigator = createStackNavigator(
   {
@@ -65,6 +66,12 @@ const AppNavigator = createStackNavigator(
       screen: TouchableOpacity,
       navigationOptions: {
         title: "TouchableOpacity"
+      }
+    },
+    ActivityIndicator: {
+      screen: ActivityIndicator,
+      navigationOptions: {
+        title: "ActivityIndicator"
       }
     }
   },
