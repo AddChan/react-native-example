@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { FlatList, StyleSheet, Text, View, Alert } from "react-native";
 
+// FlatListExample 대한 설명 블로그는 추후 업로드 될 예정입니다.
+
 export default class FlatListExample extends Component {
   renderSeparator = () => {
     return (

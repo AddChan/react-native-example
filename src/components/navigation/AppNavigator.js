@@ -11,7 +11,7 @@ import Switch from "../screen/Switch";
 import FlatList from "../screen/FlatList";
 import TouchableOpacity from "../screen/TouchableOpacity";
 import ActivityIndicator from "../screen/ActivityIndicator";
-
+import ImageExample from "../screen/ImageExample";
 const AppNavigator = createStackNavigator(
   {
     Home: {
@@ -72,6 +72,12 @@ const AppNavigator = createStackNavigator(
       screen: ActivityIndicator,
       navigationOptions: {
         title: "ActivityIndicator"
+      }
+    },
+    ImageExample: {
+      screen: ImageExample,
+      navigationOptions: {
+        title: "ImageExample"
       }
     }
   },
