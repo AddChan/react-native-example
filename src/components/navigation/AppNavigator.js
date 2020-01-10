@@ -12,6 +12,8 @@ import FlatList from "../screen/FlatList";
 import TouchableOpacity from "../screen/TouchableOpacity";
 import ActivityIndicator from "../screen/ActivityIndicator";
 import ImageExample from "../screen/ImageExample";
+import Shadow from "../screen/Shadow";
+
 const AppNavigator = createStackNavigator(
   {
     Home: {
@@ -78,6 +80,12 @@ const AppNavigator = createStackNavigator(
       screen: ImageExample,
       navigationOptions: {
         title: "ImageExample"
+      }
+    },
+    Shadow: {
+      screen: Shadow,
+      navigationOptions: {
+        title: "Shadow"
       }
     }
   },
