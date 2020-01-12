@@ -19,6 +19,7 @@ const Root = props => {
       <TouchableButton title={"TouchableOpacity"} handlePress={handlePress} />
       <TouchableButton title={"ActivityIndicator"} handlePress={handlePress} />
       <TouchableButton title={"ImageExample"} handlePress={handlePress} />
+      <TouchableButton title={"Shadow"} handlePress={handlePress} />
     </View>
   );
 };
