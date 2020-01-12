@@ -7,7 +7,9 @@ class Shadow extends Component {
   render() {
     return (
       <View style={styles.container}>
-        <Text>shadow</Text>
+        <View style={styles.wrapper}>
+          <Text>ShadowBox</Text>
+        </View>
       </View>
     );
   }
@@ -19,6 +21,11 @@ const styles = StyleSheet.create({
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "#2c3e50"
+  },
+  wrapper: {
+    width: 250,
+    height: 250,
+    elevation: 10
   }
 });
 
