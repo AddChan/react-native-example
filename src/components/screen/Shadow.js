@@ -25,7 +25,10 @@ const styles = StyleSheet.create({
   wrapper: {
     width: 250,
     height: 250,
-    elevation: 10 // 안드로이드의 경우 elevation 속성을 사용합니다 단, IOS는 적용 안됩니다.
+    elevation: 10, // 안드로이드의 경우 elevation 속성을 사용합니다 단, IOS는 적용 안됩니다.
+    shadowOffset: { width: 10, height: 10 },
+    shadowColor: "black",
+    shadowOpacity: 1.0
   }
 });
 
