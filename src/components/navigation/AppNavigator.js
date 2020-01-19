@@ -14,6 +14,7 @@ import ActivityIndicator from "../screen/ActivityIndicator";
 import ImageExample from "../screen/ImageExample";
 import Shadow from "../screen/Shadow";
 import ImageRatio from "../screen/ImageRatio";
+import SafeAreaView from "../screen/SafeAreaView";
 
 const AppNavigator = createStackNavigator(
   {
@@ -93,6 +94,12 @@ const AppNavigator = createStackNavigator(
       screen: ImageRatio,
       navigationOptions: {
         title: "ImageRatio"
+      }
+    },
+    SafeAreaView: {
+      screen: SafeAreaView,
+      navigationOptions: {
+        title: "SafeAreaView"
       }
     }
   },
