@@ -15,15 +15,14 @@ class ImageRatio extends Component {
   }
 }
 
-// define your styles
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "#2c3e50"
+    backgroundColor: "#2c3e50",
+    aspectRatio: 3 / 2 // 가로 세로 비율이 3 / 2 로 적용됩니다.
   }
 });
 
-//make this component available to the app
 export default ImageRatio;
