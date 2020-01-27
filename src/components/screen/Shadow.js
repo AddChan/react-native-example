@@ -3,6 +3,7 @@ import { View, Text, StyleSheet } from "react-native";
 
 // 안드로이드, IOS 모두 작업해 주어야 합니다.
 
+// Shadow 대한 설명 블로그는 추후 업로드 될 예정입니다.
 class Shadow extends Component {
   render() {
     return (
