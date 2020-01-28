@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import { StyleSheet, TouchableOpacity, Text, View } from "react-native";
 
 // TouchableOpacity 대한 설명 블로그는 추후 업로드 될 예정입니다.
-
+// TouchableOpacity 대신 다른 Touch Component가 있으니 참고하시기 바랍니다
 export default class TouchableOpacityExample extends Component {
   constructor(props) {
     super(props);
