@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { StyleSheet, Text, View, Slider } from "react-native";
 
-// SliderExample 에 대한 설명은 https://csc0705.tistory.com/69 에 있습니다.
+// SliderExample 대한 설명 블로그는 추후 업로드 될 예정입니다.
 
 export default class SliderExample extends Component {
   constructor(props) {

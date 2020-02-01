@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { View, Text, StyleSheet } from "react-native";
 
-// OnLayout 에 대한 설명은 https://csc0705.tistory.com/67 에 있습니다.
+// OnLayout 대한 설명 블로그는 추후 업로드 될 예정입니다.
 
 class OnLayout extends Component {
   state = {
