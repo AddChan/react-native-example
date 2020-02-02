@@ -101,6 +101,12 @@ const AppNavigator = createStackNavigator(
       navigationOptions: {
         title: "SafeAreaView"
       }
+    },
+    KeyboardAvoidingView: {
+      screen: KeyboardAvoidingView,
+      navigationOptions: {
+        title: "KeyboardAvoidingView"
+      }
     }
   },
   {
