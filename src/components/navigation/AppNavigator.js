@@ -15,6 +15,7 @@ import ImageExample from "../screen/ImageExample";
 import Shadow from "../screen/Shadow";
 import ImageRatio from "../screen/ImageRatio";
 import SafeAreaView from "../screen/SafeAreaView";
+import DatePickerIOS from "../screen/DatePickerIOS";
 
 const AppNavigator = createStackNavigator(
   {
@@ -106,6 +107,12 @@ const AppNavigator = createStackNavigator(
       screen: KeyboardAvoidingView,
       navigationOptions: {
         title: "KeyboardAvoidingView"
+      }
+    },
+    DatePickerIOS: {
+      screen: DatePickerIOS,
+      navigationOptions: {
+        title: "DatePickerIOS"
       }
     }
   },
