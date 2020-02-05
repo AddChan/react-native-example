@@ -16,7 +16,7 @@ import Shadow from "../screen/Shadow";
 import ImageRatio from "../screen/ImageRatio";
 import SafeAreaView from "../screen/SafeAreaView";
 import DatePickerIOS from "../screen/DatePickerIOS";
-
+import RefreshControl from "../screen/RefreshControl";
 const AppNavigator = createStackNavigator(
   {
     Home: {
@@ -113,6 +113,12 @@ const AppNavigator = createStackNavigator(
       screen: DatePickerIOS,
       navigationOptions: {
         title: "DatePickerIOS"
+      }
+    },
+    RefreshControl: {
+      screen: RefreshControl,
+      navigationOptions: {
+        title: "RefreshControl"
       }
     }
   },
