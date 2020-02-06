@@ -24,6 +24,7 @@ const Root = props => {
       <TouchableButton title={"SafeAreaView"} handlePress={handlePress} />
       <TouchableButton title={"DatePickerIOS"} handlePress={handlePress} />
       <TouchableButton title={"RefreshControl"} handlePress={handlePress} />
+      <TouchableButton title={"SectionList"} handlePress={handlePress} />
       <TouchableButton
         title={"KeyboardAvoidingView"}
         handlePress={handlePress}

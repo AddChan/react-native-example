@@ -17,6 +17,8 @@ import ImageRatio from "../screen/ImageRatio";
 import SafeAreaView from "../screen/SafeAreaView";
 import DatePickerIOS from "../screen/DatePickerIOS";
 import RefreshControl from "../screen/RefreshControl";
+import SectionList from "../screen/SectionList";
+
 const AppNavigator = createStackNavigator(
   {
     Home: {
@@ -119,6 +121,12 @@ const AppNavigator = createStackNavigator(
       screen: RefreshControl,
       navigationOptions: {
         title: "RefreshControl"
+      }
+    },
+    SectionList: {
+      screen: SectionList,
+      navigationOptions: {
+        title: "SectionList"
       }
     }
   },
