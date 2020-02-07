@@ -1,7 +1,9 @@
 import React, { Component } from "react";
 import { View, Text, StyleSheet } from "react-native";
 
-const KeyboardAvoidingView = () => {
+// KeyboardAvoidingViewExample 대한 설명 블로그는 추후 업로드 될 예정입니다.
+
+const KeyboardAvoidingViewExample = () => {
   state = {
     text: ""
   };
