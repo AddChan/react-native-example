@@ -18,6 +18,7 @@ import SafeAreaView from "../screen/SafeAreaView";
 import DatePickerIOS from "../screen/DatePickerIOS";
 import RefreshControl from "../screen/RefreshControl";
 import SectionList from "../screen/SectionList";
+import MaskedView from "../screen/MaskedView";
 
 const AppNavigator = createStackNavigator(
   {
@@ -127,6 +128,12 @@ const AppNavigator = createStackNavigator(
       screen: SectionList,
       navigationOptions: {
         title: "SectionList"
+      }
+    },
+    MaskedView: {
+      screen: MaskedView,
+      navigationOptions: {
+        title: "MaskedView"
       }
     }
   },
