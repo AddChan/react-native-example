@@ -19,6 +19,7 @@ import DatePickerIOS from "../screen/DatePickerIOS";
 import RefreshControl from "../screen/RefreshControl";
 import SectionList from "../screen/SectionList";
 import MaskedView from "../screen/MaskedView";
+import ProgressBarAndroid from "../screen/ProgressBarAndroid";
 
 const AppNavigator = createStackNavigator(
   {
@@ -134,6 +135,12 @@ const AppNavigator = createStackNavigator(
       screen: MaskedView,
       navigationOptions: {
         title: "MaskedView"
+      }
+    },
+    ProgressBarAndroid: {
+      screen: ProgressBarAndroid,
+      navigationOptions: {
+        title: "ProgressBarAndroid"
       }
     }
   },
