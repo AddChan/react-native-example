@@ -20,6 +20,7 @@ import RefreshControl from "../screen/RefreshControl";
 import SectionList from "../screen/SectionList";
 import MaskedView from "../screen/MaskedView";
 import ProgressBarAndroid from "../screen/ProgressBarAndroid";
+import TextInput from "../screen/TextInput";
 
 const AppNavigator = createStackNavigator(
   {
@@ -141,6 +142,12 @@ const AppNavigator = createStackNavigator(
       screen: ProgressBarAndroid,
       navigationOptions: {
         title: "ProgressBarAndroid"
+      }
+    },
+    TextInput: {
+      screen: TextInput,
+      navigationOptions: {
+        title: "TextInput"
       }
     }
   },
