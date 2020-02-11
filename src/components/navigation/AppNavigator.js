@@ -21,6 +21,7 @@ import SectionList from "../screen/SectionList";
 import MaskedView from "../screen/MaskedView";
 import ProgressBarAndroid from "../screen/ProgressBarAndroid";
 import TextInput from "../screen/TextInput";
+import TouchableHighlight from "../screen/TouchableHighlight";
 
 const AppNavigator = createStackNavigator(
   {
@@ -148,6 +149,12 @@ const AppNavigator = createStackNavigator(
       screen: TextInput,
       navigationOptions: {
         title: "TextInput"
+      }
+    },
+    TouchableHighlight: {
+      screen: TouchableHighlight,
+      navigationOptions: {
+        title: "TouchableHighlight"
       }
     }
   },
