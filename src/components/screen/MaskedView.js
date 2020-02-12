@@ -1,6 +1,8 @@
 import React from "react";
 import { MaskedViewIOS, Text, View } from "react-native";
 
+// MaskedViewExample 대한 설명 블로그는 추후 업로드 될 예정입니다.
+
 class MaskedViewExample extends React.Component {
   render() {
     return (
