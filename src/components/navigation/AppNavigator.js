@@ -23,6 +23,8 @@ import ProgressBarAndroid from "../screen/ProgressBarAndroid";
 import TextInput from "../screen/TextInput";
 import TouchableHighlight from "../screen/TouchableHighlight";
 import InputAccessoryView from "../screen/InputAccessoryView";
+import Text from "../screen/Text";
+
 const AppNavigator = createStackNavigator(
   {
     Home: {
@@ -161,6 +163,12 @@ const AppNavigator = createStackNavigator(
       screen: InputAccessoryView,
       navigationOptions: {
         title: "InputAccessoryView"
+      }
+    },
+    Text: {
+      screen: Text,
+      navigationOptions: {
+        title: "Text"
       }
     }
   },
