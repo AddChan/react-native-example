@@ -31,6 +31,7 @@ const Root = props => {
       <TouchableButton title={"TouchableHighlight"} handlePress={handlePress} />
       <TouchableButton title={"InputAccessoryView"} handlePress={handlePress} />
       <TouchableButton title={"Text"} handlePress={handlePress} />
+      <TouchableButton title={"Button"} handlePress={handlePress} />
       <TouchableButton
         title={"KeyboardAvoidingView"}
         handlePress={handlePress}

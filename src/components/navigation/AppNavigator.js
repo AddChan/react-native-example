@@ -24,7 +24,7 @@ import TextInput from "../screen/TextInput";
 import TouchableHighlight from "../screen/TouchableHighlight";
 import InputAccessoryView from "../screen/InputAccessoryView";
 import Text from "../screen/Text";
-
+import Button from '../screen/Button';
 const AppNavigator = createStackNavigator(
   {
     Home: {
@@ -170,7 +170,13 @@ const AppNavigator = createStackNavigator(
       navigationOptions: {
         title: "Text"
       }
-    }
+    },
+    Button: {
+      screen: Button,
+      navigationOptions: {
+        title: "Button"
+      }
+    },
   },
   {
     initialRouteName: "Home"
