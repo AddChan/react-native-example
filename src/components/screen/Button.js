@@ -13,7 +13,9 @@ function Separator() {
   return <View style={styles.separator} />;
 }
 
-export default function App() {
+// ButtonExample 대한 설명 블로그는 추후 업로드 될 예정입니다.
+
+export default function ButtonExample() {
   return (
     <SafeAreaView style={styles.container}>
       <View>

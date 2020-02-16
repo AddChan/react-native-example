@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Text, StyleSheet } from "react-native";
 
+// TextExample 대한 설명 블로그는 추후 업로드 될 예정입니다.
+
 export default class TextExample extends Component {
   constructor(props) {
     super(props);
