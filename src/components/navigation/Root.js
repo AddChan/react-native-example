@@ -9,28 +9,40 @@ const Root = props => {
 
   return (
     <View style={styles.container}>
+      <Text>S</Text>
       <TouchableButton title={"ScrollTo"} handlePress={handlePress} />
       <TouchableButton title={"Sticky"} handlePress={handlePress} />
-      <TouchableButton title={"OnLayout"} handlePress={handlePress} />
-      <TouchableButton title={"Modal"} handlePress={handlePress} />
       <TouchableButton title={"Slider"} handlePress={handlePress} />
       <TouchableButton title={"Switch"} handlePress={handlePress} />
-      <TouchableButton title={"FlatList"} handlePress={handlePress} />
-      <TouchableButton title={"TouchableOpacity"} handlePress={handlePress} />
-      <TouchableButton title={"ActivityIndicator"} handlePress={handlePress} />
-      <TouchableButton title={"ImageExample"} handlePress={handlePress} />
-      <TouchableButton title={"Shadow"} handlePress={handlePress} />
-      <TouchableButton title={"ImageRatio"} handlePress={handlePress} />
       <TouchableButton title={"SafeAreaView"} handlePress={handlePress} />
-      <TouchableButton title={"DatePickerIOS"} handlePress={handlePress} />
-      <TouchableButton title={"RefreshControl"} handlePress={handlePress} />
       <TouchableButton title={"SectionList"} handlePress={handlePress} />
+      <TouchableButton title={"SectionList"} handlePress={handlePress} />
+      <TouchableButton title={"Shadow"} handlePress={handlePress} />
+      <Text>O</Text>
+      <TouchableButton title={"OnLayout"} handlePress={handlePress} />
+      <Text>M</Text>
+      <TouchableButton title={"Modal"} handlePress={handlePress} />
       <TouchableButton title={"MaskedView"} handlePress={handlePress} />
-      <TouchableButton title={"ProgressBarAndroid"} handlePress={handlePress} />
-      <TouchableButton title={"TextInput"} handlePress={handlePress} />
-      <TouchableButton title={"TouchableHighlight"} handlePress={handlePress} />
+      <Text>R</Text>
+      <TouchableButton title={"RefreshControl"} handlePress={handlePress} />
+      <Text>F</Text>
+      <TouchableButton title={"FlatList"} handlePress={handlePress} />
+      <Text>I</Text>
+      <TouchableButton title={"ImageRatio"} handlePress={handlePress} />
+      <TouchableButton title={"ImageExample"} handlePress={handlePress} />
       <TouchableButton title={"InputAccessoryView"} handlePress={handlePress} />
+      <Text>A</Text>
+      <TouchableButton title={"ActivityIndicator"} handlePress={handlePress} />
+      <Text>D</Text>
+      <TouchableButton title={"DatePickerIOS"} handlePress={handlePress} />
+      <Text>P</Text>
+      <TouchableButton title={"ProgressBarAndroid"} handlePress={handlePress} />
+      <Text>T</Text>
+      <TouchableButton title={"TouchableOpacity"} handlePress={handlePress} />
+      <TouchableButton title={"TextInput"} handlePress={handlePress} />
       <TouchableButton title={"Text"} handlePress={handlePress} />
+      <TouchableButton title={"TouchableHighlight"} handlePress={handlePress} />
+      <Text>B</Text>
       <TouchableButton title={"Button"} handlePress={handlePress} />
       <TouchableButton
         title={"KeyboardAvoidingView"}
