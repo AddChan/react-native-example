@@ -9,7 +9,7 @@ const Root = props => {
 
   return (
     <View style={styles.container}>
-      <Text>S</Text>
+      <Text style={styles.Title}>S</Text>
       <TouchableButton title={"ScrollTo"} handlePress={handlePress} />
       <TouchableButton title={"Sticky"} handlePress={handlePress} />
       <TouchableButton title={"Slider"} handlePress={handlePress} />
@@ -18,31 +18,31 @@ const Root = props => {
       <TouchableButton title={"SectionList"} handlePress={handlePress} />
       <TouchableButton title={"SectionList"} handlePress={handlePress} />
       <TouchableButton title={"Shadow"} handlePress={handlePress} />
-      <Text>O</Text>
+      <Text style={styles.Title}>O</Text>
       <TouchableButton title={"OnLayout"} handlePress={handlePress} />
-      <Text>M</Text>
+      <Text style={styles.Title}>M</Text>
       <TouchableButton title={"Modal"} handlePress={handlePress} />
       <TouchableButton title={"MaskedView"} handlePress={handlePress} />
-      <Text>R</Text>
+      <Text style={styles.Title}>R</Text>
       <TouchableButton title={"RefreshControl"} handlePress={handlePress} />
-      <Text>F</Text>
+      <Text style={styles.Title}>F</Text>
       <TouchableButton title={"FlatList"} handlePress={handlePress} />
-      <Text>I</Text>
+      <Text style={styles.Title}>I</Text>
       <TouchableButton title={"ImageRatio"} handlePress={handlePress} />
       <TouchableButton title={"ImageExample"} handlePress={handlePress} />
       <TouchableButton title={"InputAccessoryView"} handlePress={handlePress} />
-      <Text>A</Text>
+      <Text style={styles.Title}>A</Text>
       <TouchableButton title={"ActivityIndicator"} handlePress={handlePress} />
-      <Text>D</Text>
+      <Text style={styles.Title}>D</Text>
       <TouchableButton title={"DatePickerIOS"} handlePress={handlePress} />
-      <Text>P</Text>
+      <Text style={styles.Title}>P</Text>
       <TouchableButton title={"ProgressBarAndroid"} handlePress={handlePress} />
-      <Text>T</Text>
+      <Text style={styles.Title}>T</Text>
       <TouchableButton title={"TouchableOpacity"} handlePress={handlePress} />
       <TouchableButton title={"TextInput"} handlePress={handlePress} />
       <TouchableButton title={"Text"} handlePress={handlePress} />
       <TouchableButton title={"TouchableHighlight"} handlePress={handlePress} />
-      <Text>B</Text>
+      <Text style={styles.Title}>B</Text>
       <TouchableButton title={"Button"} handlePress={handlePress} />
       <TouchableButton
         title={"KeyboardAvoidingView"}
@@ -59,5 +59,9 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     alignItems: "center"
+  },
+  Title: {
+    fontSize: 15,
+    fontWeight: "bold"
   }
 });
