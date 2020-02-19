@@ -24,7 +24,9 @@ import TextInput from "../screen/TextInput";
 import TouchableHighlight from "../screen/TouchableHighlight";
 import InputAccessoryView from "../screen/InputAccessoryView";
 import Text from "../screen/Text";
-import Button from '../screen/Button';
+import Button from "../screen/Button";
+import ScrollView from "../screen/ScrollView";
+
 const AppNavigator = createStackNavigator(
   {
     Home: {
@@ -177,6 +179,12 @@ const AppNavigator = createStackNavigator(
         title: "Button"
       }
     },
+    ScrollView: {
+      screen: ScrollView,
+      navigationOptions: {
+        title: "ScrollView"
+      }
+    }
   },
   {
     initialRouteName: "Home"
