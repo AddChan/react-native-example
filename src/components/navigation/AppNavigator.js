@@ -184,6 +184,12 @@ const AppNavigator = createStackNavigator(
       navigationOptions: {
         title: "ScrollView"
       }
+    },
+    ToastAndroid: {
+      screen: ToastAndroid,
+      navigationOptions: {
+        title: "ToastAndroid"
+      }
     }
   },
   {
