@@ -26,6 +26,7 @@ import InputAccessoryView from "../screen/InputAccessoryView";
 import Text from "../screen/Text";
 import Button from "../screen/Button";
 import ScrollView from "../screen/ScrollView";
+import Keyboard from "../screen/Keyboard";
 
 const AppNavigator = createStackNavigator(
   {
@@ -189,6 +190,12 @@ const AppNavigator = createStackNavigator(
       screen: ToastAndroid,
       navigationOptions: {
         title: "ToastAndroid"
+      }
+    },
+    Keyboard: {
+      screen: Keyboard,
+      navigationOptions: {
+        title: "Keyboard"
       }
     }
   },
