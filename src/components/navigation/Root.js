@@ -48,6 +48,8 @@ const Root = props => {
       <TouchableButton title={"Button"} handlePress={handlePress} />
       <Text style={styles.Title}>K</Text>
       <TouchableButton title={"Keyboard"} handlePress={handlePress} />
+      <Text style={styles.Title}>V</Text>
+      <TouchableButton title={"View"} handlePress={handlePress} />
       <TouchableButton
         title={"KeyboardAvoidingView"}
         handlePress={handlePress}

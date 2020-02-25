@@ -27,6 +27,7 @@ import Text from "../screen/Text";
 import Button from "../screen/Button";
 import ScrollView from "../screen/ScrollView";
 import Keyboard from "../screen/Keyboard";
+import View from "../screen/View";
 
 const AppNavigator = createStackNavigator(
   {
@@ -196,6 +197,12 @@ const AppNavigator = createStackNavigator(
       screen: Keyboard,
       navigationOptions: {
         title: "Keyboard"
+      }
+    },
+    View: {
+      screen: View,
+      navigationOptions: {
+        title: "View"
       }
     }
   },
