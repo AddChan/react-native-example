@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { View, Text } from "react-native";
 
-export default class ViewColoredBoxesWithText extends Component {
+export default class ViewExample extends Component {
   render() {
     return (
       <View
