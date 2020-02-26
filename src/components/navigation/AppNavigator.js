@@ -28,6 +28,7 @@ import Button from "../screen/Button";
 import ScrollView from "../screen/ScrollView";
 import Keyboard from "../screen/Keyboard";
 import View from "../screen/View";
+import Share from "../screen/Share";
 
 const AppNavigator = createStackNavigator(
   {
@@ -203,6 +204,12 @@ const AppNavigator = createStackNavigator(
       screen: View,
       navigationOptions: {
         title: "View"
+      }
+    },
+    Share: {
+      screen: Share,
+      navigationOptions: {
+        title: "Share"
       }
     }
   },
