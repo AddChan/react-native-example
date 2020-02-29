@@ -29,6 +29,7 @@ import ScrollView from "../screen/ScrollView";
 import Keyboard from "../screen/Keyboard";
 import View from "../screen/View";
 import Share from "../screen/Share";
+import Dimensions from "../screen/Dimensions";
 
 const AppNavigator = createStackNavigator(
   {
@@ -210,6 +211,12 @@ const AppNavigator = createStackNavigator(
       screen: Share,
       navigationOptions: {
         title: "Share"
+      }
+    },
+    Dimensions: {
+      screen: Dimensions,
+      navigationOptions: {
+        title: "Dimensions"
       }
     }
   },
