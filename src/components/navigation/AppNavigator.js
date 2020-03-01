@@ -30,6 +30,7 @@ import Keyboard from "../screen/Keyboard";
 import View from "../screen/View";
 import Share from "../screen/Share";
 import Dimensions from "../screen/Dimensions";
+import AsyncStorage from "../screen/AsyncStorage";
 
 const AppNavigator = createStackNavigator(
   {
@@ -217,6 +218,12 @@ const AppNavigator = createStackNavigator(
       screen: Dimensions,
       navigationOptions: {
         title: "Dimensions"
+      }
+    },
+    AsyncStorage: {
+      screen: AsyncStorage,
+      navigationOptions: {
+        title: "AsyncStorage"
       }
     }
   },
