@@ -4,6 +4,8 @@ import { View, StyleSheet, Text, Dimensions } from "react-native";
 const window = Dimensions.get("window");
 const screen = Dimensions.get("screen");
 
+// DimensionsExample 대한 설명 블로그는 추후 업로드 될 예정입니다.
+
 export default function DimensionsExample() {
   const [dimensions, setDimensions] = useState({ window, screen });
 
