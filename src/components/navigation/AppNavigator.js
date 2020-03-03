@@ -31,6 +31,7 @@ import View from "../screen/View";
 import Share from "../screen/Share";
 import Dimensions from "../screen/Dimensions";
 import AsyncStorage from "../screen/AsyncStorage";
+import PermissionsAndroid from "../screen/PermissionsAndroid";
 
 const AppNavigator = createStackNavigator(
   {
@@ -224,6 +225,12 @@ const AppNavigator = createStackNavigator(
       screen: AsyncStorage,
       navigationOptions: {
         title: "AsyncStorage"
+      }
+    },
+    PermissionsAndroid: {
+      screen: PermissionsAndroid,
+      navigationOptions: {
+        title: "PermissionsAndroid"
       }
     }
   },
